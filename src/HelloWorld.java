@@ -1,7 +1,11 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
+
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.LayoutManager;
 
 public class HelloWorld {
     public static void main(String[] args) {
@@ -11,9 +15,9 @@ public class HelloWorld {
 
         // Création de la fenêtre
         JFrame fenetre = new JFrame(title);
-        fenetre.setSize(new Dimension(400, 500));
+        fenetre.setSize(new Dimension(800, 400));
         fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        fenetre.getContentPane().setBackground(Color.YELLOW);
+        fenetre.getContentPane().setBackground(Color.green);
 
 
         // Création du label de texte
@@ -22,10 +26,10 @@ public class HelloWorld {
         label.setVerticalAlignment(JLabel.CENTER);
         label.setForeground(Color.BLACK);
 
+        // Création d'un conteneur pour le contenu aligné à gauche
+        JPanel contenu = new JPanel();
+        contenu.setLayout((LayoutManager) new FlowLayout(FlowLayout.LEFT)); // Alignement à gauche
 
-        // Ajoutez d'autres composants à la fenêtre, si nécessaire
-
-       
         fenetre.add(label);
         fenetre.setVisible(true);
     }
