@@ -1,4 +1,4 @@
 public class Constantes {
-    public static final String HELLO_WORLD_TITLE = "Title Hello world";
-    public static final String HELLO_WORLD_TEXT = "Hello world text";
+    public static final String HELLO_WORLD_TITLE = ConstantesUtil.HELLO_WORLD_TITLE;
+    public static final String HELLO_WORLD_TEXT = ConstantesUtil.HELLO_WORLD_TEXT;
 }
