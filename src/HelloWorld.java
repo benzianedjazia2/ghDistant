@@ -11,7 +11,7 @@ public class HelloWorld {
 
         // Création de la fenêtre
         JFrame fenetre = new JFrame(title);
-        fenetre.setSize(new Dimension(200, 200));
+        fenetre.setSize(new Dimension(400, 500));
         fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         // Création du label de texte
