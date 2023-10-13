@@ -13,15 +13,22 @@ public class HelloWorld {
         JFrame fenetre = new JFrame(title);
         fenetre.setSize(new Dimension(400, 500));
         fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        fenetre.getContentPane().setBackground(Color.YELLOW);
+
 
         // Création du label de texte
         JLabel label = new JLabel(text);
         label.setHorizontalAlignment(JLabel.CENTER);
         label.setVerticalAlignment(JLabel.CENTER);
-        label.setForeground(Color.YELLOW);
+        label.setForeground(Color.BLACK);
 
-        // Finalisation
+
+        // Ajoutez d'autres composants à la fenêtre, si nécessaire
+
+       
         fenetre.add(label);
         fenetre.setVisible(true);
     }
+    
+
 }
