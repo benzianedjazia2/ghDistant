@@ -12,10 +12,10 @@ public class HelloWorld {
         // Utilisation des constantes définies dans Constants.java
         String title = Constants.HELLO_WORLD_TITLE;
         String text = Constants.HELLO_WORLD_TEXT;
-
+//Changer la taille de la fenêtre d'origine
         // Création de la fenêtre
         JFrame fenetre = new JFrame(title);
-        fenetre.setSize(new Dimension(800, 400));
+        fenetre.setSize(new Dimension(800, 600));
         fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         fenetre.getContentPane().setBackground(Color.cyan);
 
