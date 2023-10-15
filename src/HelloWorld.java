@@ -6,7 +6,7 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.LayoutManager;
-
+/**class java */
 public class HelloWorld {
     public static void main(String[] args) {
         // Utilisation des constantes définies dans Constants.java
