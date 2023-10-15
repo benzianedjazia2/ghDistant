@@ -17,7 +17,7 @@ public class HelloWorld {
         JFrame fenetre = new JFrame(title);
         fenetre.setSize(new Dimension(800, 400));
         fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        fenetre.getContentPane().setBackground(Color.green);
+        fenetre.getContentPane().setBackground(Color.cyan);
 
 
         // Création du label de texte
