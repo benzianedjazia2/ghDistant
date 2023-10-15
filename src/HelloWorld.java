@@ -15,7 +15,7 @@ public class HelloWorld {
 
         // Création de la fenêtre
         JFrame fenetre = new JFrame(title);
-        fenetre.setSize(new Dimension(800, 400));
+        fenetre.setSize(new Dimension(800, 600));
         fenetre.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         fenetre.getContentPane().setBackground(Color.cyan);
 
@@ -25,7 +25,16 @@ public class HelloWorld {
         label.setHorizontalAlignment(JLabel.CENTER);
         label.setVerticalAlignment(JLabel.CENTER);
         label.setForeground(Color.BLACK);
-
+      JLabel dateLabel = new JLabel();
+        dateLabel.setHorizontalAlignment(JLabel.CENTER);
+      // Rafraîchit la date toutes les secondes
+        Timer timer = new Timer(1000, e -> {
+            Date date = new Date();
+            SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+            String dateStr = dateFormat.format(date);
+            dateLabel.setText("Date du jour : " + dateStr);
+        });
+        timer.start();
         // Création d'un conteneur pour le contenu aligné à gauche
         JPanel contenu = new JPanel();
         contenu.setLayout((LayoutManager) new FlowLayout(FlowLayout.LEFT)); // Alignement à gauche
